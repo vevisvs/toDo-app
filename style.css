@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: #fafafa;
+    --grey: rgb(100, 97, 97);
+    --pink-light: #d37aae;
+    --purple-dark: #5b1b5e;
+    --green: #1ebb7f;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to bottom, var(--pink-light), var(--green));
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    border:#5b1b5e 2px solid;
+}
+
+.container {
+    max-width: 80%;
+    width: 400px;
+    height: 600px;
+    margin: 0 auto; /*elementos centrados*/
+}
+
+/*--PERFIL--*/
+
+.perfil h1 {
+    color: var(--white);
+}
+
+.perfil span {
+    color: var(--white);
+    letter-spacing: 0.2rem;
+}
+
+#fecha {
+    color: var(--white);
+    padding: 50px, 0 5px 0;
+}
+
+
+/* --AGREGAR TAREA--*/
+
+.agregar-tarea {
+    background-color: var(--white);
+    border-radius: 15px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 70px;
+    margin: 40px 0;
+
+}
+
+.agregar-tarea input {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--white);
+
+}
+
+.agregar-tarea i {
+    font-size: 3rem;
+    color: var(--purple-dark);
+}
+
+.agregar-tarea i:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.agregar-tarea input::placeholder {
+    font-size: 1.1rem;
+    color: var(--purple-dark);
+}
+
+
+/*--SECCION TAREA--*/
+
+.seccion-tarea h3 {
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.seccion-tarea li {
+    display: flex;
+    background-color: var(--grey);
+    border-radius: 15px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+    color: var(--white);
+    
+}
+
+.seccion-tarea i {
+    font-size: 25px;
+}
+
+.seccion-tarea i:hover {
+    color: var(--white);
+    cursor: pointer;
+}
+
+.seccion-tarea > ul p {
+font-size: 1.2rem;
+}
+
+.line-through {
+    text-decoration: line-through;
+    color: var(--purple-dark);
+}
