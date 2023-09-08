@@ -9,13 +9,13 @@
     --grey: rgb(100, 97, 97);
     --pink-light: #d37aae;
     --purple-dark: #5b1b5e;
-    --green: #1ebb7f;
+    --green: #6c9183;
 }
 
 body {
     display: flex;
     align-items: center;
-    background: linear-gradient(to bottom, var(--pink-light), var(--green));
+    background: var(--green);
     height: 100vh;
     font-family: 'Open Sans', sans-serif;
     border:#5b1b5e 2px solid;
@@ -31,7 +31,7 @@ body {
 /*--PERFIL--*/
 
 .perfil h1 {
-    color: var(--white);
+    color: var(--purple-dark);
 }
 
 .perfil span {
@@ -87,13 +87,13 @@ body {
 /*--SECCION TAREA--*/
 
 .seccion-tarea h3 {
-    color: var(--white);
+    color: var(--purple-dark);
     margin-bottom: 20px;
 }
 
 .seccion-tarea li {
     display: flex;
-    background-color: var(--grey);
+    background-color: var(--white);
     border-radius: 15px;
     padding: 10px;
     align-items: center;
@@ -105,6 +105,7 @@ body {
 
 .seccion-tarea i {
     font-size: 25px;
+    color: var(--purple-dark)
 }
 
 .seccion-tarea i:hover {
@@ -113,7 +114,9 @@ body {
 }
 
 .seccion-tarea > ul p {
-font-size: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--purple-dark)
 }
 
 .line-through {
